@@ -6,8 +6,6 @@ scalaVersion := "2.12.7"
 
 enablePlugins(GraalVMNativeImagePlugin)
 
-mainClass := Some("com.github.zjjfly.sid.ch2.ExpressionPrivilege")
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 
-libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.0.5" % "test"
-)
+Compile / mainClass := Some("com.github.zjjfly.sid.ch2.ExpressionPrivilege")
