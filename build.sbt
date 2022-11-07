@@ -1,4 +1,4 @@
-name := "ScalaInDepth"
+name := "scala-in-depth"
 
 version := "0.1"
 
