@@ -20,7 +20,7 @@ object ScalaMain extends App {
   //如果没有重新编译Main,下面的代码会报错
   println(foo.newMethod())
   //防止出错的办法是使用反射
-  val clazz = Class.forName("com.jjzi.ch4.Foo")
+  val clazz = Class.forName("com.github.zjjfly.sid.ch4.Foo")
   val method = clazz.getMethod("newMethod")
   println(method.invoke(foo))
 }
